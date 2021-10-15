@@ -4,7 +4,7 @@
 # Author        : Anup Jacob
 # Version       : v1.0
 # Created Date  : 11/10/2021
-# Modified Date : 11/10/2021
+# Modified Date : 15/10/2021
 # Description   : Displaying the machine and Operating System details
 # Licensing     : Anup Jacob, LYIT
 # ----------------------------------
@@ -16,11 +16,14 @@ import sys
 
 def os_details():
     # information regarding the Operating system and the machine details are displayed in the body of this function
-   print("\nThe OS and version of the system is : "+platform.system()+" "+platform.release())
+   print("")
    print("The owner of the PC : " + os.environ["USERNAME"])
-   print("The name of the machine : " + os.environ["COMPUTERNAME"])
-   print("The processor in the machine : " + os.environ["PROCESSOR_ARCHITECTURE"])
+   #print("The name of the machine : " + os.environ["COMPUTERNAME"])
+   print("The name of the machine : " + platform.node())
+   print("The processor in the machine :  : "+platform.machine())
+   #print("The processor in the machine : " + os.environ["PROCESSOR_ARCHITECTURE"])
    print("The number of processors in the system : " + os.environ["NUMBER_OF_PROCESSORS"])
+   print("\nThe OS and version of the system is : " + platform.system() + " " + platform.release())
    #print()
 
 if __name__ == '''__main__''':

@@ -14,10 +14,11 @@ import time
 def timecounter(messlen):
 
     print("Loading ....")
-    for i in range (messlen):
+    for i in range (1,messlen+1):
         time.sleep(1)
         print(i)
         messlen -= 1
+    # Added loading and time counter print functionality
 
 
 if __name__ == '''__main__''':
@@ -29,8 +30,7 @@ if __name__ == '''__main__''':
 
     #print("The message entered is :"+message)
     # Message input check
-    #print("The length of the message is : "+format(mess_len))
-    # Message length check
+
     encrypt_message = ''
     # initialising the encrypt variable
     i = mess_len - 1
@@ -41,6 +41,10 @@ if __name__ == '''__main__''':
         else:
             encrypt_message = encrypt_message + message[i]
         i -= 1;
+    # Encryption process
+    print("")
+    print("The length of the message is : "+format(mess_len))
+        # Message length check
     # The reversing and Pipe(|) addition functionality as part of encryption
 
     print("The encrypted message is : "+encrypt_message)

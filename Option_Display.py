@@ -12,6 +12,16 @@
 def read_courses():
     print("Tuple of courses")
 
+def edit_courses():
+    print("List of courses")
+
+def pretty_print():
+    print("Pretty Print data in the list")
+
+def word_check():
+    print("Check for common words in the list")
+
+
 if __name__ == '''__main__''':
 
     a=0
@@ -19,9 +29,15 @@ if __name__ == '''__main__''':
     print("Display Menu")
     print("------------")
     print("1. Display the list of courses in LYIT")
-    a=input("Enter your Choice : ")
-    if (a == 1):
+    a = input("Enter your Choice : ")
+    if (a == '1'):
         read_courses()
+    elif (a == '2'):
+        edit_courses()
+    elif (a == '3'):
+        pretty_print()
+    elif (a == '4'):
+        word_check()
     else:
         print("Wrong selection")
     print("")

@@ -9,10 +9,20 @@
 # Licensing     : Anup Jacob, LYIT
 # ----------------------------------
 
+def read_courses():
+    print("Tuple of courses")
+
 if __name__ == '''__main__''':
 
+    a=0
     print("")
     print("Display Menu")
     print("------------")
-    Print("")
+    print("1. Display the list of courses in LYIT")
+    a=input("Enter your Choice : ")
+    if (a == 1):
+        read_courses()
+    else:
+        print("Wrong selection")
+    print("")
 

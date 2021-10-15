@@ -18,13 +18,17 @@ def os_details():
     # information regarding the Operating system and the machine details are displayed in the body of this function
    print("")
    print("The owner of the PC : " + os.environ["USERNAME"])
+    # Displays the name of the owner of the machine.
    #print("The name of the machine : " + os.environ["COMPUTERNAME"])
    print("The name of the machine : " + platform.node())
+    #Displays the name of the machine.
    print("The processor in the machine :  : "+platform.machine())
+    # Displays the processor of the machine.
    #print("The processor in the machine : " + os.environ["PROCESSOR_ARCHITECTURE"])
    print("The number of processors in the system : " + os.environ["NUMBER_OF_PROCESSORS"])
+    # Displays the number of processors of the machine.
    print("\nThe OS and version of the system is : " + platform.system() + " " + platform.release())
-   #print()
+    # Displays the OS and the version used in the machine.
 
 if __name__ == '''__main__''':
     os_details()
